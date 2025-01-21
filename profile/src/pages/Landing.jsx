@@ -33,7 +33,7 @@ export default function Landing() {
         <div className="profile__wrapper">
           <Profile index={index} key={index}></Profile>
         </div>
-        <footer className="arrows__wrapper">
+        <div className="arrows__wrapper">
           {index > min ? (
             <button onClick={handleLeftArrow} className="left__arrow">
               <img src={LeftArrow} alt="" className="arrow__btn" />
@@ -48,7 +48,7 @@ export default function Landing() {
           ) : (
             <button className="arrow--hidden">{"<-"}</button>
           )}
-        </footer>
+        </div>
       </div>
     </div>
   );

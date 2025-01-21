@@ -68,6 +68,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  max-height: 100vh;
 }
 
 nav {
@@ -93,9 +94,12 @@ nav {
 }
 
 .arrows__wrapper {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  top: 85vh;
+  width: 100%;
 }
 
 .left__arrow,
@@ -104,7 +108,6 @@ nav {
   padding: 12px;
   margin: 12px;
   margin-bottom: 24px;
-  position: relative;
 }
 
 .left__arrow {
