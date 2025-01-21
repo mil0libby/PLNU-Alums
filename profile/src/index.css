@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.profile-header {
+  padding: 20px;
+  background-color: green;
+  color: white;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.current-role {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.profile-details {
+  padding: 20px;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.profile-details strong {
+  font-weight: 600;
+}
+
+.education-history {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0 0;
+}
+
+.container {
+  background-color: rgba(0, 128, 0, 0.527);
+  height: 105vh;
+  width: 100%;
+}
+
+.row {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title__span {
+  font-size: 48px;
+  margin-left: 24px;
+}
+
+.logo {
+  border-radius: 10px;
+}
+
+.profile__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrows__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left__arrow,
+.right__arrow,
+.arrow--hidden {
+  padding: 12px;
+  margin: 12px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.left__arrow {
+  margin-left: 64px;
+}
+
+.right__arrow {
+  margin-right: 64px;
+}
+
+.email-logo__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img__linked {
+  width: 50px;
+  height: 50px;
+}
+
+.arrow--hidden {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+}
+
+.arrow__btn {
+  height: 40px;
+  width: 40px;
+}
