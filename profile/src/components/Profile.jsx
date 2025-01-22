@@ -1,47 +1,47 @@
 import React, { useEffect, useState } from "react";
-import profiles from "../data.json";
 import LinkedLogo from "../assets/linked.png";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
-export default function Profile({ index }) {
-  const [profile, setProfile] = useState(profiles[index]);
+export default function Profile({ profile }) {
+  const [prof, setProf] = useState(profile);
 
   useEffect(() => {
-    console.log(profiles);
+    AOS.init();
   }, []);
+
   return (
-    <div className="profile-card">
+    <div className="profile-card" data-aos="fade-up">
       <div className="profile-header">
-        <img
-          src={profile.image}
-          alt="Profile Picture"
-          className="profile-pic"
-        />
-        <h1 className="name">{profile.name}</h1>
-        <p className="current-role">{profile.role}</p>
+        <a href={prof.link}>
+          <img src={prof.image} alt="Profile Picture" className="profile-pic" />
+        </a>
+        <h1 className="name">{prof.name}</h1>
+        <p className="current-role">{prof.role}</p>
       </div>
       <div className="profile-details">
         <div className="email-logo__wrapper">
           <div className="email">
-            <strong>Email:</strong> {profile.email}{" "}
+            <strong>Email:</strong> {prof.email}{" "}
           </div>
 
           <span>
-            <a href={profile.link} target="_">
+            <a href={prof.link} target="_">
               <img className="img__linked" src={LinkedLogo} alt="" />
             </a>
           </span>
         </div>
         <p>
-          <strong>Phone:</strong> {profile.phone}
+          <strong>Phone:</strong> {prof.phone}
         </p>
         <p>
-          <strong>Location:</strong> {profile.location}
+          <strong>Location:</strong> {prof.location}
         </p>
         <p>
           <strong>Graduate School:</strong>
         </p>
         <ul className="education-history">
-          {profile.education.map((school, index) => (
+          {prof.education.map((school, index) => (
             <li key={index}>{school}</li>
           ))}
         </ul>

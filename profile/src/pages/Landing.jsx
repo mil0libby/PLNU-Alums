@@ -3,11 +3,14 @@ import Logo from "../assets/logo.png";
 import Profile from "../components/Profile";
 import RightArrow from "../assets/right-arrow.png";
 import LeftArrow from "../assets/left-arrow.png";
+import SearchBar from "../components/SearchBar";
+import data from "../data.json";
 
 export default function Landing() {
   const [index, setIndex] = useState(1);
   const [min, setMin] = useState(1);
   const [max, setMax] = useState(3);
+  const [profiles, setProfiles] = useState(data);
 
   useEffect(() => {
     console.log(index);
@@ -23,6 +26,7 @@ export default function Landing() {
 
   return (
     <div className="container">
+      <div className="top"></div>
       <div className="row">
         <nav>
           <span className="img__span">
@@ -30,8 +34,9 @@ export default function Landing() {
           </span>
           <span className="title__span">Health Science Alumni</span>
         </nav>
+        <SearchBar profiles={profiles} setIndex={setIndex}></SearchBar>
         <div className="profile__wrapper">
-          <Profile index={index} key={index}></Profile>
+          <Profile profile={profiles[index]} key={index}></Profile>
         </div>
         <div className="arrows__wrapper">
           {index > min ? (

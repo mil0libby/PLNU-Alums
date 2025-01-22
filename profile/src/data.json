@@ -7,7 +7,8 @@
     "phone": "999-456-0012",
     "location": "Tucson, Arizona, United States ",
     "education": ["UCSD School of Medicine"],
-    "link": "https://www.linkedin.com/in/ed-gutierrez-a065b137/"
+    "link": "https://www.linkedin.com/in/ed-gutierrez-a065b137/",
+    "title": "Physician"
   },
   "2": {
     "image": "https://media.licdn.com/dms/image/v2/C5603AQEPmcaWC_NPew/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1555120274656?e=1743033600&v=beta&t=iqFxzzNDyQmADQ1mNt4taabIJU6CVbsOdb_xHqiV2fA",
@@ -17,7 +18,8 @@
     "phone": "999-124-0332",
     "location": "Los Angeles, California, United States ",
     "education": ["Metro State University", "Grand Canyon University"],
-    "link": "https://www.linkedin.com/in/renee-v-ba532838"
+    "link": "https://www.linkedin.com/in/renee-v-ba532838",
+    "title": "Nurse"
   },
   "3": {
     "image": "https://media.licdn.com/dms/image/v2/C4D03AQH3B-t90cDbpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517037415391?e=1743033600&v=beta&t=s2kwwZ9vy3FUPHMr0QgjLI5MZRnc3XTvvmcVOpq6NcQ",
@@ -27,7 +29,8 @@
     "phone": "999-443-4322",
     "location": "San Diego, California, United States ",
     "education": ["Friends University", "University of Kansas"],
-    "link": "https://www.linkedin.com/in/don-welch-ph-d-lmft-424b3a132/"
+    "link": "https://www.linkedin.com/in/don-welch-ph-d-lmft-424b3a132/",
+    "title": "Executive Director"
   },
   "4": {
     "image": "",
@@ -37,6 +40,7 @@
     "phone": "999-124-0332",
     "location": "Los Angeles, California, United States ",
     "education": ["Metro State University", "Grand Canyon University"],
-    "link": "https://www.linkedin.com/in/renee-v-ba532838"
+    "link": "https://www.linkedin.com/in/renee-v-ba532838",
+    "title": "Nurse"
   }
 }
